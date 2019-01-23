@@ -35,7 +35,6 @@ def max_val(list):
       """
   return max_value #we returning max_value 
 
-------------------------------------------------------------------------------------------------------------------------------
 
   """
   According to previous algortihm we can find minimum value in list which given to function
@@ -49,8 +48,15 @@ def max_val(list):
         
         min_value  = liste[i]
     return min_value
- 
-------------------------------------------------------------------------------------------
+
+  
+  
+  
+#if you want to execute a function you have to call this function.
+list_e = [5,8,9,7,8,5,2,6,5,8,10,2,5]
+min_val(list_e)
+max_val(list_e)
+
         
 
 
