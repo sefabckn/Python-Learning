@@ -90,7 +90,7 @@ for index,value in enumerate(color_list):
   #our str1(giving string) is will be between index and index+1
   """
   example: color_list=["Red", "Blue", "Green", "Black"]
-  and i want to clear remove "Blue".
+  and i want to remove "Blue".
   this code piece is making this:
   ["Red",] + ["Green","Black"]
   ["0",] + ["2","3"]
