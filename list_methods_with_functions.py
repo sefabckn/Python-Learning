@@ -188,6 +188,40 @@ print(index("Walter"))
   
   
   
+"""
+Another function is 'Count'
+this function is counting your values in a list and showing you which value is counted how many times
+example:
+list= ["Black","Yellow","Red","Red","Green"]
+and if you run this code:
+list.count("Red")
+expected output: 2 (must be)
+We can coding this method using by functions
+"""
+ #firstly i defined a 'count' as function and asking a string or any value 
+ #for to find which value is need to be find how many times repeated in list
+  
+def count(str1):
+  #i will define a 'counter' variable as equal to zero ,i will explaing why we doing this
+  counter = 0 
+  #here i will define a default list which we've using that before functions
+  color_list = ["Red", "Blue", "Green", "Black", "Blue"]
+  #we will run for loop on this list 
+  for i in color_list:
+  #i defined every value in list as 'i' 
+  #and if our given string/value is equal to loop value 'i'
+  #this algorithm will add +1 to our counter object and this will be over till counted every
+  #thing
+  
+       if str1 == i:
+            counter +=1
+  return "{} counted: {} times".format(str1, counter)
+  #i returned str1 and counter like this
+  
+  
+  
+  
+  
   
   
   
