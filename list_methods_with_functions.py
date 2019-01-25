@@ -130,9 +130,68 @@ def pop(index_number):
   return color_list[x]
 #if i want to run this code:
 print(pop(#any index which not out of range))
+
+
   
+  
+  
+  
+  
+  
+  #In this case i will write index function for to make anything easier  
+"""
+Previously on remove function we've used  built-in funciton named as 'enumerate'
+We will use this function again so i will not explain that how its working and how to use it in any loop
+If you do not remember you should check out 'remove function'up there.
+Well, Lets talk about our new function is 'INDEX'
+as you know python is sorting all datas which in lists or tuples as starting from zero till ending value
+So in this case i would like to show you how Python doing that and how can you create this algorithm as so simple
+"""
+#I've created a index function and i asking a value from user
+#this value is can be anything so we can run it on loop
+def index(str1):
+  #I will give a list for to test this function
+  default_list = ["Red", "Green", "Blue", "White", "Walter", "Junior","Skyler"]
+  #now i will start to trip on this values by using for loop :)
+  for index_number, value in enumerate(default_list):
+   """
+   I gave 2 variable,First variable is controlling -as you see- number of index and second variable is cont-
+   rolling value of 'index number'.So you can see that index function is aiming to find index of given string 
+   (str1)
+  Lets keep coding and see how python does this
+   """
+      #here i will create a statement which is controlling str1 is equal to value or not
+      #so we can find result
+       if str1 == value:
+        #if given value is equal to enumerated value 
+        # we will add our result index_number which belong to enumerated value
+          result = index_number
+       else:
+           pass
+    return "Index number of {} = {}".format(str1, result)
+  """
+  as return we've used a string method is formatting
+  This method were using as '%' in Python 2.x.x ,this method still working on Python 3 but i think it will
+  be removed by developers in future.'format' method is most usefull i guess.Choose your side :D
+  """
+ #if you want to see result check this code pieces below
+print(index("Green"))
+  Expected Output  : 1
+print(index("Blue"))
+  Expected Output : 2
+print(index("White"))
+  Expected Output  : 3
+print(index("Walter"))
+  Expected Output : 4
 
-
+  
+  
+  
+  
+  
+  
+  
+  
 
   
     
